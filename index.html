@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monika V | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    html {
+      scroll-padding-top: 100px;
+    }
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: linear-gradient(to right, #f0f4f8, #d9e4f5);
+      color: #1a1a1a;
+    }
+    header {
+      background-color: #ffffff;
+      color: #333;
+      padding: 20px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #2c3e50;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #1abc9c;
+    }
+    section {
+      padding: 80px 40px 40px;
+      animation: fadeIn 0.8s ease-in;
+    }
+    section h1, section h2, section h3 {
+      font-size: 32px;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+    p, li {
+      font-size: 18px;
+      line-height: 1.7;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #1abc9c;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background-color: #16a085;
+    }
+    .skills-map {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .skill-box {
+      background: #ffffff;
+      border: 2px solid #d1e9f0;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+      transition: transform 0.3s ease;
+      width: 200px;
+      text-align: center;
+    }
+    .skill-box:hover {
+      transform: translateY(-8px);
+    }
+    .skill-box h4 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #1abc9c;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<style>
+  #typed-output {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1abc9c;
+    margin-left: 12px;
+  }
+  #scrollTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 50%;
+    font-size: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+  }
+  #scrollTopBtn:hover {
+    background-color: #16a085;
+  }
+</style>
+</head>
+<body>
+  <script>
+    // Scroll to top on page reload
+    window.onload = function () {
+      setTimeout(function () {
+        window.scrollTo(0, 0);
+      }, 100);
+    };
+
+    // Typed.js animation
+    document.addEventListener("DOMContentLoaded", function () {
+      new Typed("#typed-output", {
+        strings: ["Future-Ready Developer", "Web Enthusiast", "Curious Learner", "Aspiring Software Engineer"],
+        typeSpeed: 60,
+        backSpeed: 30,
+        backDelay: 1500,
+        loop: true
+      });
+    });
+
+    // Scroll to top button
+    window.onscroll = function () {
+      const btn = document.getElementById("scrollTopBtn");
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+  <button id="scrollTopBtn" onclick="scrollToTop()">↑</button>
+  <script>
+    // Scroll to top on page reload
+    window.onload = function () {
+      setTimeout(function () {
+        window.scrollTo(0, 0);
+      }, 100);
+    };
+  </script>
+  <header>
+    <h2>I'm a <span id="typed-output"></span></h2>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+  <h1>Hello, I'm Monika 👩‍💻</h1>
+  <p style="font-size: 20px; line-height: 1.8;">I am a <strong>Computer Science fresher</strong> with a passion for web development and building meaningful digital experiences. I'm currently pursuing my Master's degree and recently completed a Full Stack Development certification. My background includes both frontend and backend technologies, giving me a solid foundation to create modern, responsive websites and applications.</p>
+  <p style="font-size: 20px; line-height: 1.8;">I'm highly motivated, detail-oriented, and always eager to learn something new. Whether it’s creating clean UIs, writing efficient backend logic, or working with databases, I love every part of the development process. As a fresher, I bring fresh ideas, strong academic training, and a readiness to take on real-world challenges.</p>
+  <p style="font-size: 18px;"><strong>📍 Location:</strong> Chennai, India</p>
+  <p style="font-size: 18px;"><strong>📞 Phone:</strong> 8925635780</p>
+  <p style="font-size: 18px;"><strong>📧 Email:</strong> <a href="mailto:moniveera20@gmail.com">moniveera20@gmail.com</a></p>
+  <a href="resume.pdf" download class="btn">Download Resume</a>
+</section>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills-map">
+      <div class="skill-box">
+        <h4>Frontend</h4>
+        <p>HTML, CSS, JavaScript, React, Bootstrap</p>
+      </div>
+      <div class="skill-box">
+        <h4>Backend</h4>
+        <p>Java, Python (Django), Node.js</p>
+      </div>
+      <div class="skill-box">
+        <h4>Databases</h4>
+        <p>MySQL, MongoDB</p>
+      </div>
+      <div class="skill-box">
+        <h4>Languages</h4>
+        <p>Java, Python, C, C++</p>
+      </div>
+      <div class="skill-box">
+        <h4>Tools</h4>
+        <p>Git, VS Code, Postman</p>
+      </div>
+      <div class="skill-box">
+        <h4>Others</h4>
+        <p>REST APIs, Version Control, Responsive Design</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="internship">
+    <h2>Internship</h2>
+    <h3>Java Developer Intern at VCodez</h3>
+    <p><strong>Duration:</strong> 2025 – Present</p>
+    <p>Currently working as a Java Intern at VCodez. I contribute to backend development, apply OOP concepts in Java, and participate in real-time debugging, testing, and integrating modules into larger systems. The internship has given me exposure to Java frameworks, team collaboration, agile practices, and version control using Git. My role involves writing clean, maintainable code and enhancing backend performance and scalability.</p>
+  </section>
+
+  <section id="projects">
+  <h2>Projects</h2>
+  <div style="display: flex; flex-direction: row; gap: 40px; justify-content: space-between; flex-wrap: wrap; margin-top: 30px;">
+    <div style="flex: 1; min-width: 300px; max-width: 48%; background: #ffffff; border: 2px solid #d1e9f0; padding: 24px; border-radius: 12px; box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08); transition: transform 0.3s ease;">
+      <h3>🖐️ Hand Gesture Controlled PC</h3>
+      <p>A computer vision-based system that allows users to interact with their computer using hand gestures instead of traditional peripherals like a mouse or keyboard. Built with OpenCV and CNN models, the system detects real-time hand gestures and performs mapped actions such as opening files, controlling volume, and navigating applications. MediaPipe is used for tracking hand landmarks with high accuracy, while NumPy supports efficient numerical operations.</p>
+      <p><strong>Key Features:</strong> Gesture recognition, real-time control, CNN-based classification</p>
+      <p><strong>Technologies:</strong> Python, OpenCV, CNN, MediaPipe, NumPy</p>
+      <p><strong>Duration:</strong> Nov 2023 – Mar 2024</p>
+    </div>
+    <div style="flex: 1; min-width: 300px; max-width: 48%; background: #ffffff; border: 2px solid #d1e9f0; padding: 24px; border-radius: 12px; box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08); transition: transform 0.3s ease;">
+      <h3>🛒 Shopping Cart for Gadgets</h3>
+      <p>An interactive shopping cart system built using core Java principles to simulate an e-commerce experience. Users can view a list of gadgets, add/remove items from the cart, and generate a bill summary. Emphasizes modular code structure using object-oriented programming, Java collections, and file handling techniques to persist cart data.</p>
+      <p><strong>Key Features:</strong> Console interface, file I/O storage, dynamic cart handling</p>
+      <p><strong>Technologies:</strong> Java, File I/O, OOP, Collections</p>
+      <p><strong>Year:</strong> 2024</p>
+    </div>
+  </div>
+</section>
+
+  <section id="education">
+  <h2>Education</h2>
+  <div style="margin-bottom: 40px;">
+    <h3 style="color: #1abc9c; font-size: 26px;">🎓 M.Sc. Computer Science</h3>
+    <p><strong>Institution:</strong> Annai Veilankanni’s College, Chennai</p>
+    <p><strong>Duration:</strong> 2024 – Present</p>
+    <p>Currently pursuing a Master's degree focused on advanced programming, machine learning, and data science. Emphasizing both theory and practical work, strengthening my research abilities and preparing me for development roles.</p>
+  </div>
+
+  <div>
+    <h3 style="color: #1abc9c; font-size: 26px;">🎓 B.Sc. Computer Science</h3>
+    <p><strong>Institution:</strong> Annai Veilankanni’s College, Chennai</p>
+    <p><strong>Duration:</strong> 2021 – 2024</p>
+    <p><strong>CGPA:</strong> 90%</p>
+    <p>Graduated with distinction, covered areas such as algorithms, web development, database systems, and computer architecture. Completed a final-year project using Python and OpenCV for hand gesture-based control.</p>
+  </div>
+</section>
+
+<section id="certifications">
+  <h2>Certifications & Achievements</h2>
+  <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between; margin-top: 20px;">
+    <div style="flex: 1 1 45%; background: #fff; padding: 20px; border: 2px solid #d1e9f0; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.08);">
+      <h3>📜 Full Stack Development</h3>
+      <p>Completed at CSC, Chennai (2023 – 2024)</p>
+    </div>
+    <div style="flex: 1 1 45%; background: #fff; padding: 20px; border: 2px solid #d1e9f0; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.08);">
+      <h3>💻 Diploma in Computer Applications</h3>
+      <p>SSSI Computer Institution (2020)</p>
+    </div>
+    <div style="flex: 1 1 45%; background: #fff; padding: 20px; border: 2px solid #d1e9f0; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.08);">
+      <h3>🚀 Space Research Payload</h3>
+      <p>Payload Cubes 2021 – Dr. APJ Abdul Kalam Space Research</p>
+    </div>
+    <div style="flex: 1 1 45%; background: #fff; padding: 20px; border: 2px solid #d1e9f0; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.08);">
+      <h3>🏅 Record Achievements</h3>
+      <p>Recognized by Guinness World Records, India Book, and Asia Book of Records</p>
+    </div>
+  </div>
+</section>
+
+<section id="thankyou">
+  <h2>Thanks for Visiting</h2>
+  <p style="font-size: 20px; line-height: 1.8; margin-top: 20px;">I truly appreciate your time reviewing my portfolio. If you're seeking a dedicated, curious, and hardworking developer who loves turning complex problems into elegant solutions, I'd be thrilled to be part of your team. Let's build something impactful together!</p>
+  <p style="font-size: 22px; font-weight: bold; color: #1abc9c; margin-top: 20px;">You can hire me — I’m ready to contribute and grow!</p>
+</section>
+</body>
+</html>
