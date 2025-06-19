@@ -30,16 +30,12 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-wrap: wrap;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
     nav ul {
       list-style: none;
       display: flex;
       gap: 20px;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding-top: 10px;
     }
     nav ul li a {
       text-decoration: none;
@@ -51,18 +47,17 @@
       color: #1abc9c;
     }
     section {
-      padding: 60px 20px 30px;
+      padding: 80px 40px 40px;
       animation: fadeIn 0.8s ease-in;
     }
     section h1, section h2, section h3 {
-      font-size: 28px;
+      font-size: 32px;
       color: #2c3e50;
       margin-bottom: 20px;
-      text-align: center;
     }
     p, li {
-      font-size: 17px;
-      line-height: 1.6;
+      font-size: 18px;
+      line-height: 1.7;
     }
     .btn {
       display: inline-block;
@@ -92,7 +87,7 @@
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
       transition: transform 0.3s ease;
-      width: 220px;
+      width: 200px;
       text-align: center;
     }
     .skill-box:hover {
@@ -103,57 +98,41 @@
       margin-bottom: 10px;
       color: #1abc9c;
     }
-    #scrollTopBtn {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      background-color: #1abc9c;
-      color: white;
-      border: none;
-      padding: 12px 18px;
-      border-radius: 50%;
-      font-size: 20px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      cursor: pointer;
-      display: none;
-      z-index: 999;
-    }
-    #scrollTopBtn:hover {
-      background-color: #16a085;
-    }
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        text-align: center;
-      }
-      nav ul {
-        flex-direction: column;
-        gap: 10px;
-        padding-bottom: 10px;
-      }
-      section {
-        padding: 40px 20px;
-      }
-      section h1, section h2, section h3 {
-        font-size: 24px;
-      }
-      .skill-box {
-        width: 100%;
-        max-width: 300px;
-      }
-      .btn {
-        width: 100%;
-        text-align: center;
-      }
-    }
   </style>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<style>
+  #typed-output {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1abc9c;
+    margin-left: 12px;
+  }
+  #scrollTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 50%;
+    font-size: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+  }
+  #scrollTopBtn:hover {
+    background-color: #16a085;
+  }
+</style>
 </head>
 <body>
- <script>
+  <script>
     // Scroll to top on page reload
     window.onload = function () {
       setTimeout(function () {
@@ -181,7 +160,6 @@
         btn.style.display = "none";
       }
     };
-
     function scrollToTop() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
@@ -214,7 +192,7 @@
   <p style="font-size: 18px;"><strong>📍 Location:</strong> Chennai, India</p>
   <p style="font-size: 18px;"><strong>📞 Phone:</strong> 8925635780</p>
   <p style="font-size: 18px;"><strong>📧 Email:</strong> <a href="mailto:moniveera20@gmail.com">moniveera20@gmail.com</a></p>
-  <a href=https://drive.google.com/file/d/1h7kVqTdFfXwevUwR_9DpCmZyNZQ_xHCM/view?usp=drive_link target="_blank" class="btn">Download Resume</a>
+ <a href=https://drive.google.com/file/d/1h7kVqTdFfXwevUwR_9DpCmZyNZQ_xHCM/view?usp=drive_link target="_blank" class="btn">Download Resume</a>
 
 </section>
 
